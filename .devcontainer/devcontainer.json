@@ -11,7 +11,7 @@
 				"cordx56.rustowl-vscode"
 			]
 		}
-	}
+	},
 
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	// "mounts": [
@@ -29,7 +29,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	 "postCreateCommand": "cargo install rustlings && rustlings"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
